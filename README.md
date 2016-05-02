@@ -44,30 +44,30 @@ The configuration for each package is located in their respective folder. The pa
     ``
 9.  Open a terminal, go to the location of the git repository and boot up the vagrant box
     
-    ```
+    ``
         $ vagrant up 
-    ```
+    ``
 10. Connect to the vagrant environment
     
-    ```
+    ``
         $ vagrant ssh
-    ```
+    ``
 11. ``cd`` to the development repository on your vagrant box
 12. Copy the main `Gemfile` to your repository
     
-    ```
+    ``
         $ cp /vagrant/Gemfile .
-    ```
+    ``
 13. Install the gems in the `Gemfile`
     
-    ```
-        $ sudo bundle install
-    ```
+    ``
+    $ sudo bundle install
+    ``
 14. Start up the jekyll server
     
-    ```
+    ``
         $ jekyll serve 
-    ```
+    ``
 
 And that is it!
 
