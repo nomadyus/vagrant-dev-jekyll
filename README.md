@@ -18,7 +18,7 @@ The configuration for each package is located in their respective folder. The pa
 - apache
     - apache2
 - GitHub Pages
-    - ruby 1.9.3
+    - ruby 2.0.0
     - gem "github-pages"    
     
 ## Vagrant Box Installation
