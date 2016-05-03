@@ -1,4 +1,6 @@
 class github-pages {
+    $as_vagrant = 'sudo -u vagrant -H bash -l -c'
+    
 	package {'ruby':
 		ensure  => 'installed',
 		require => Class['system-update'],
@@ -17,33 +19,16 @@ class github-pages {
     }
     
     exec {'update-ruby':
-        command => 'rvm install 2.0.0',
-        onlyif => 'type rvm | head -1 | grep -c \'rvm is a function\' | wc -l',
+        command => 'rvm install 2.0.0 --autolibs=enabled && rvm --fuzzy alias create default 2.0.0',
+        #onlyif => 'type rvm | head -1 | grep -c \'rvm is a function\' | wc -l',
         require => Exec['install-rvm'],
-        notify => Exec['use-ruby2'],
-        logoutput => true,
-    }
-    
-    exec {'use-ruby2':
-        command => 'rvm use 2.0.0',
-        onlyif => 'rvm list | grep -c 2.0.0 | wc -l',
-        require => Exec['update-ruby'],
         notify => Exec['install-bundler'],
-        logoutput => true,
     }
     
     exec {'install-bundler':
-        command => 'sudo gem install bundler',
+        command => "${as_vagrant} 'gem install bundler --no-rdoc --no-ri'",
         onlyif => 'dpkg -l | grep -c ruby | wc -l',
-		require => [Package['ruby'], Exec['use-ruby2']],
-        notify => Exec['gemfile-gems-install'],
-        logoutput => true,
-    }
-    
-    exec {'gemfile-gems-install':
-        command => 'sudo bundle install',
-        onlyif => 'gem list | grep -c bundler | wc -l',
-		require => [Package['ruby'], Exec['install-bundler']],
+		require => [Package['ruby'], Exec['update-ruby']],
         logoutput => true,
     }
     
