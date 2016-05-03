@@ -1,6 +1,6 @@
-Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/" ] }
+Exec { path => [ "/bin/", "/sbin/", "/usr/bin/", "/usr/sbin/", "/usrc/local/", "/usr/local/rvm/bin/", "/usr/local/rvm/scripts/" ] }
 
-package { ['vim', 'curl', 'git'] :
+package { ['vim', 'curl', 'git']:
 	ensure  => 'installed',
 	require => Exec['apt-get update'],
 }
