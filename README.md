@@ -52,7 +52,7 @@ The configuration for each package is located in their respective folder. The pa
     ``
         $ vagrant ssh
     ``
-11. ``cd`` to the development repository on your vagrant box
+11. ``cd`` to the development repository on your vagrant box. Should be a directory under the ``/vagrant/`` directory
 12. Copy the main `Gemfile` to your repository
     
     ``
@@ -61,7 +61,7 @@ The configuration for each package is located in their respective folder. The pa
 13. Install the gems in the `Gemfile`
     
     ``
-    $ sudo bundle install
+        $ sudo bundle install
     ``
 14. Start up the jekyll server
     
