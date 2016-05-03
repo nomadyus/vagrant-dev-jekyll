@@ -23,14 +23,12 @@ class github-pages {
         #onlyif => 'type rvm | head -1 | grep -c \'rvm is a function\' | wc -l',
         require => Exec['install-rvm'],
         notify => Exec['install-bundler'],
-        logoutput => true,
     }
     
     exec {'install-bundler':
         command => "${as_vagrant} 'gem install bundler --no-rdoc --no-ri'",
         onlyif => 'dpkg -l | grep -c ruby | wc -l',
 		require => [Package['ruby'], Exec['update-ruby']],
-        logoutput => true,
     }
     
     file {'/vagrant/Gemfile':
