@@ -8,6 +8,7 @@ Just a vagrant repository for any web developement using a apache stack with Pup
 - box:      "precise64"
 - hostname: "albatross"
 - vb name:  "albatross.dev"
+- port: 4000
 
 ## Requirements
 - [Vagrant](https://www.vagrantup.com/)
@@ -75,7 +76,7 @@ The configuration for each package is located in their respective folder. The pa
         $ jekyll serve --host 0.0.0.0 
     ``
 
-And that is it!
+And that is it! Your jekyll server should be active on port 4000
 
 ## Credits
 - [Puppet.com](https://puppet.com/blog/lamp-stacks-made-easy-vagrant-puppet) - LAMP Stacks Made Easy with Vagrant & Puppet 
