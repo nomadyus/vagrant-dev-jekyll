@@ -72,7 +72,7 @@ The configuration for each package is located in their respective folder. The pa
 15. Start up the jekyll server
     
     ``
-        $ jekyll serve 
+        $ jekyll serve --host 0.0.0.0 
     ``
 
 And that is it!
@@ -87,3 +87,4 @@ And that is it!
 - [Jes.al for Ruby and Jekyll installation](http://jes.al/2014/04/setup-dev-environment-using-vagrant-puppet-part-ii/)
 - [Bundler - Gemfile ruby version](http://bundler.io/v1.3/gemfile_ruby.html)
 - [Jekyll](https://jekyllrb.com/)
+- [Stacoverflow - Connecting to Jekyll server on Vagrant from outside](http://stackoverflow.com/questions/27617217/cannot-reach-jekyll-server-on-vagrant-from-outside)
