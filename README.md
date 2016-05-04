@@ -19,7 +19,8 @@ The configuration for each package is located in their respective folder. The pa
     - apache2
 - GitHub Pages
     - ruby 2.0.0
-    - gem "github-pages"    
+    - gem "github-pages"
+    - therubyracer
     
 ## Vagrant Box Installation
 ```
@@ -79,6 +80,7 @@ And that is it!
 ## Credits
 - [Puppet.com](https://puppet.com/blog/lamp-stacks-made-easy-vagrant-puppet) - LAMP Stacks Made Easy with Vagrant & Puppet 
 - [jrodriguezjr/puppet-lamp-stack](https://github.com/jrodriguezjr/puppet-lamp-stack)
+- [thruflo/vagrant-jekyll](https://github.com/thruflo/vagrant-jekyll)
 - [GitHub - Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#step-1-create-a-local-repository-for-your-jekyll-site)
 - [Puppet CookBook](http://www.puppetcookbook.com/)
 - [Google groups - Puppet Users](https://groups.google.com/forum/#!topic/puppet-users/w7D5695FCls)
