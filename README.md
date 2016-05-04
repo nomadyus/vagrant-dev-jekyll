@@ -63,7 +63,12 @@ The configuration for each package is located in their respective folder. The pa
     ``
         $ bundle install
     ``
-14. Start up the jekyll server
+14. Create a new jekyll site in your directory
+    
+    ``
+        $ jekyll new . --force        
+    ``
+15. Start up the jekyll server
     
     ``
         $ jekyll serve 
