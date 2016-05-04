@@ -79,3 +79,4 @@ And that is it!
 - [Google groups - Puppet Users](https://groups.google.com/forum/#!topic/puppet-users/w7D5695FCls)
 - [Jes.al for Ruby and Jekyll installation](http://jes.al/2014/04/setup-dev-environment-using-vagrant-puppet-part-ii/)
 - [Bundler - Gemfile ruby version](http://bundler.io/v1.3/gemfile_ruby.html)
+- [Jekyll](https://jekyllrb.com/)
