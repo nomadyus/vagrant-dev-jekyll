@@ -61,7 +61,7 @@ The configuration for each package is located in their respective folder. The pa
 13. Install the gems in the `Gemfile`
     
     ``
-        $ sudo bundle install
+        $ bundle install
     ``
 14. Start up the jekyll server
     
