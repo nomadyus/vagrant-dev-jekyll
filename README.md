@@ -58,7 +58,7 @@ The configuration for each package is located in their respective folder. The pa
 12. Copy the main `Gemfile` to your repository
     
     ``
-        $ cp /vagrant/Gemfile .
+        $ mv /vagrant/Gemfile .
     ``
 13. Install the gems in the `Gemfile`
     
