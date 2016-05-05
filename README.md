@@ -55,7 +55,7 @@ The configuration for each package is located in their respective folder. The pa
         $ vagrant ssh
     ``
 11. ``cd`` to the development repository on your vagrant box. Should be a directory under the ``/vagrant/`` directory
-12. Copy the main `Gemfile` to your repository
+12. Move the main `Gemfile` to your repository
     
     ``
         $ mv /vagrant/Gemfile .
